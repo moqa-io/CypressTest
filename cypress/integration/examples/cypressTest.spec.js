@@ -8,6 +8,6 @@ describe('should display an error message when you enter wrong login information
       cy.get('#id_userLoginId').type('test@gmail.com',{force: true})
       cy.get('#id_password').type('1234',{force: true})
       cy.get('button[class="btn login-button btn-submit btn-small"]').click()
-      cy.get('div[class="ui-message-contents"]').should('be.visible')
+      cy.get('.ui-message-contents').should('be.visible')
     })
    })
